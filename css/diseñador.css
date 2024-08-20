@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #003366; /* Azul oscuro */
+    color: #fff;
+    padding: 15px 0;
+}
+
+header h1 {
+    float: left;
+    margin: 0;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 40px 0;
+}
+
+.design-section {
+    background: #f0f8ff; /* Azul muy claro */
+    padding: 40px 0;
+}
+
+.design-tools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-selection, .design-options {
+    margin-bottom: 20px;
+}
+
+.design-canvas {
+    margin: 20px 0;
+}
+
+#canvas-container {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+button {
+    background: #004080; /* Azul marino */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+
+button:hover {
+    background: #003366; /* Azul oscuro */
+}
+
+input[type="file"], input[type="text"] {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+footer {
+    background: #003366; /* Azul oscuro */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
