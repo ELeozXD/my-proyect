@@ -12,6 +12,7 @@ body {
 
 ul img {
     display: none;
+    float: center
 }
 
 a:active {
@@ -40,7 +41,7 @@ header {
 
 .todo{
     margin: 0 auto;
-   background-image: url("fondo.jpg");
+   background-image: url("fondo.jpg");
 }
 
 header h1 {
@@ -174,49 +175,66 @@ footer ul li a {
     header h1, nav ul {
         float: right;
         text-align: center;
-        margin: 0;
+        margin: 0 auto;
         width: auto;
-        margin-bottom: 0px
+        margin-bottom: 0px;
+        padding: 0;
+        background-color: rgba(25, 25, 25, 0.2)
     }
     
-    nav ul {
+    header {
+        height: 50px
+    }
+    
+    nav ul:hover{
         padding: 0;
         display: block;
+        background-color: rgba(25, 25, 25, 0.7);
     }
 
     nav ul li{
+        transition: all 500ms;
         display: none
     }
     
     nav ul li a {
         display: none;
-        
+        padding: 7px;
+        text-align: center;
+        z-index: 1000;
     }
     
     .container h1{
         float: left
     }
     
+    nav {
+        background-color: black;
+        z-index: -1;
+    }
+    
     ul img{
         display: block;
-        size: 5px;
         padding: 0;
         width: 50px;
         margin: 0;
+        float: center;
     }
     
     nav ul:hover > li a {
-        display: block;
+        transition: all 500ms;
+        display: flex;
         margin: 0 auto;
-        
+        float: center;
     }
     
-    ul li a:hover {
-        background-color: gray
+    ul li:hover {
+        background-color: gray;
     }
     
     nav ul:focus{
         display: block;
+        width: 20px;
     }
     
     nav ul li {
@@ -230,7 +248,7 @@ footer ul li a {
     }
 
     .hero {
-        margin-top: 87px;
+        margin-top: 69px;
     }
 }
 
